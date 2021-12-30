@@ -4,17 +4,6 @@
   <string name="afp_action_close">Закрыть</string>
   <string name="afp_type_directory">Каталог</string>
   <string name="afp_type_document">Файл</string>
-  <string name="afp_type_certificate">Сертификат</string>
-  <string name="afp_type_drawing">Рисунок</string>
-  <string name="afp_type_excel">Таблица</string>
-  <string name="afp_type_image">Картинка</string>
-  <string name="afp_type_music">Аудиофайл</string>
-  <string name="afp_type_video">Видео</string>
-  <string name="afp_type_pdf">Документ PDF</string>
-  <string name="afp_type_power_point">Презентация</string>
-  <string name="afp_type_word">Документ</string>
-  <string name="afp_type_archive">Архив</string>
-  <string name="afp_menu_select">Выбрать</string>
   <string name="afp_menu_add_folder">Добавить папку</string>
   <string name="afp_folder_name">Имя папки</string>
   <string name="afp_dialog_create">Создать</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Папка уже существует</string>
   <string name="afp_error_folder_created">Не удалось создать папку</string>
   <string name="afp_select_directory">Выбрать папку</string>
+  <string name="afp_done">Готово</string>
 </resources>

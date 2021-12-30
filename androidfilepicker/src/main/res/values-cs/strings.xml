@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_empty_directory_hint">Prázdná složka</string>
   <string name="afp_action_close">Zavřít</string>
-  <string name="afp_type_archive">Archiv</string>
-  <string name="afp_type_certificate">Certifikát</string>
   <string name="afp_type_directory">Složka</string>
   <string name="afp_type_document">Soubor</string>
-  <string name="afp_type_drawing">Kresba</string>
-  <string name="afp_type_excel">Tabulka</string>
-  <string name="afp_type_image">Obrázek</string>
-  <string name="afp_type_music">Skladba</string>
-  <string name="afp_type_video">Video</string>
-  <string name="afp_type_pdf">PDF dokument</string>
-  <string name="afp_type_power_point">Prezentace</string>
-  <string name="afp_type_word">Dokument</string>
-  <string name="afp_menu_select">Vybrat</string>
   <string name="afp_menu_add_folder">Přidat složku</string>
   <string name="afp_folder_name">Název složky</string>
   <string name="afp_dialog_create">Vytvořit</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Složka existuje</string>
   <string name="afp_error_folder_created">Složka nebyla vytvořena</string>
   <string name="afp_select_directory">Vyberte adresář</string>
+  <string name="afp_done">Hotovo</string>
 </resources>

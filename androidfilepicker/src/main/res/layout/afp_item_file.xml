@@ -5,8 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/afp_item_background"
     android:orientation="horizontal"
-    android:layout_margin="8dp"
-    android:padding="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
     android:gravity="center_vertical"
     >
 
@@ -14,7 +20,7 @@
       android:id="@+id/item_file_image"
       android:layout_width="36dp"
       android:layout_height="36dp"
-      app:tint="@color/afp_white"
+      app:tint="@color/afp_black"
       />
 
   <LinearLayout
@@ -33,7 +39,7 @@
         android:singleLine="true"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:textColor="@color/afp_white"
+        android:textColor="@color/afp_black"
         />
 
     <TextView
@@ -41,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:textColor="@color/afp_white"
+        android:textColor="@color/afp_black"
         />
 
   </LinearLayout>

@@ -9,10 +9,12 @@
       android:id="@+id/et_dirName"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="4dp"
+      android:layout_margin="12dp"
       android:hint="@string/afp_folder_name"
       android:importantForAutofill="no"
       android:inputType="text"
+      android:textColor="@color/afp_black"
+      android:textColorHint="@color/afp_black"
       />
 
 </LinearLayout>

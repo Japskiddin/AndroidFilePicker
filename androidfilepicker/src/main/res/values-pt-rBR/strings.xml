@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_action_close">Fechar</string>
   <string name="afp_empty_directory_hint">Diretório vazio</string>
-  <string name="afp_type_archive">Arquivo</string>
-  <string name="afp_type_certificate">Certificado</string>
   <string name="afp_type_directory">Diretório</string>
   <string name="afp_type_document">Arquivo</string>
-  <string name="afp_type_drawing">Foto</string>
-  <string name="afp_type_excel">Planilha</string>
-  <string name="afp_type_image">Imagem</string>
-  <string name="afp_type_music">Música</string>
-  <string name="afp_type_video">Vídeo</string>
-  <string name="afp_type_pdf">Documento PDF</string>
-  <string name="afp_type_power_point">Apresentação</string>
-  <string name="afp_type_word">Documento</string>
-  <string name="afp_menu_select">Selecione</string>
   <string name="afp_menu_add_folder">Adicionar pasta</string>
   <string name="afp_folder_name">Nome da pasta</string>
   <string name="afp_dialog_create">Crio</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Pasta existe</string>
   <string name="afp_error_folder_created">A pasta não foi criada</string>
   <string name="afp_select_directory">Selecione o diretório</string>
+  <string name="afp_done">Feito</string>
 </resources>

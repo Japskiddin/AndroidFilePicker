@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_action_close">దగ్గరగా</string>
   <string name="afp_empty_directory_hint">ఖాళీ డైరెక్టరీ</string>
-  <string name="afp_type_archive">ఆర్కైవ్</string>
-  <string name="afp_type_certificate">సర్టిఫికేట్</string>
   <string name="afp_type_directory">డైరెక్టరీ</string>
   <string name="afp_type_document">ఫైల్</string>
-  <string name="afp_type_drawing">చిత్రం</string>
-  <string name="afp_type_excel">స్ప్రెడ్‌షీట్</string>
-  <string name="afp_type_image">చిత్రం</string>
-  <string name="afp_type_music">సంగీతం</string>
-  <string name="afp_type_video">వీడియో</string>
-  <string name="afp_type_pdf">PDF పత్రం</string>
-  <string name="afp_type_power_point">ప్రెజెంటేషన్</string>
-  <string name="afp_type_word">పత్రం</string>
-  <string name="afp_menu_select">ఎంచుకోండి</string>
   <string name="afp_menu_add_folder">ఫోల్డర్‌ని జోడించండి</string>
   <string name="afp_folder_name">ఫోల్డర్ పేరు</string>
   <string name="afp_dialog_create">సృష్టించు</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">ఫోల్డర్ ఉంది</string>
   <string name="afp_error_folder_created">ఫోల్డర్ సృష్టించబడలేదు</string>
   <string name="afp_select_directory">డైరెక్టరీని ఎంచుకోండి</string>
+  <string name="afp_done">పూర్తి</string>
 </resources>

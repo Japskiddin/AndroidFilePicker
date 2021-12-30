@@ -1,6 +1,5 @@
 package io.github.japskiddin.androidfilepicker.ui;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
@@ -18,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import io.github.japskiddin.androidfilepicker.FileItem;
 import io.github.japskiddin.androidfilepicker.R;
 import io.github.japskiddin.androidfilepicker.filter.CompositeFilter;
@@ -36,7 +36,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Pattern;
 
-@SuppressWarnings("Convert2Lambda") public class FilePickerActivity extends Activity {
+@SuppressWarnings("Convert2Lambda") public class FilePickerActivity extends AppCompatActivity {
   public static final String ARG_START_PATH = "arg_start_path";
   public static final String ARG_CURRENT_PATH = "arg_current_path";
 
@@ -255,16 +255,18 @@ import java.util.regex.Pattern;
     AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
     alertDialog.setView(linearLayout);
     alertDialog.setTitle(R.string.afp_dialog_title);
-    alertDialog.setNegativeButton(R.string.afp_dialog_cancel, new DialogInterface.OnClickListener() {
-      @Override public void onClick(DialogInterface dialogInterface, int i) {
-        dialogInterface.dismiss();
-      }
-    });
-    alertDialog.setPositiveButton(R.string.afp_dialog_create, new DialogInterface.OnClickListener() {
-      @Override public void onClick(DialogInterface dialogInterface, int i) {
-        createNewFolder(dirName.getText().toString());
-      }
-    });
+    alertDialog.setNegativeButton(R.string.afp_dialog_cancel,
+        new DialogInterface.OnClickListener() {
+          @Override public void onClick(DialogInterface dialogInterface, int i) {
+            dialogInterface.dismiss();
+          }
+        });
+    alertDialog.setPositiveButton(R.string.afp_dialog_create,
+        new DialogInterface.OnClickListener() {
+          @Override public void onClick(DialogInterface dialogInterface, int i) {
+            createNewFolder(dirName.getText().toString());
+          }
+        });
     alertDialog.create().show();
   }
 
@@ -335,10 +337,12 @@ import java.util.regex.Pattern;
 
       for (StorageBean storageBean : storageBeans) {
         if (!storageBean.getRemovable()) {
-          storages.add(new FileItem(getString(R.string.afp_internal_storage), storageBean.getPath()));
+          storages.add(
+              new FileItem(getString(R.string.afp_internal_storage), storageBean.getPath()));
         } else {
-          String name = removableCount > 1 ? (getString(R.string.afp_micro_sd) + " " + removablePosName)
-              : getString(R.string.afp_micro_sd);
+          String name =
+              removableCount > 1 ? (getString(R.string.afp_micro_sd) + " " + removablePosName)
+                  : getString(R.string.afp_micro_sd);
           storages.add(new FileItem(name, storageBean.getPath()));
           if (removableCount > 1) removablePosName++;
         }

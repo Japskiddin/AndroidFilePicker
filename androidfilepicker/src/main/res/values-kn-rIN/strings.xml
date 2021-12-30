@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_action_close">ಮುಚ್ಚಿ</string>
   <string name="afp_empty_directory_hint">ಖಾಲಿ ಡೈರೆಕ್ಟರಿ</string>
-  <string name="afp_type_archive">ಆರ್ಕೈವ್</string>
-  <string name="afp_type_certificate">ಪ್ರಮಾಣಪತ್ರ</string>
   <string name="afp_type_directory">ಡೈರೆಕ್ಟರಿ</string>
   <string name="afp_type_document">ಫೈಲ್</string>
-  <string name="afp_type_drawing">ಚಿತ್ರ</string>
-  <string name="afp_type_excel">ಸ್ಪ್ರೆಡ್ಶೀಟ್</string>
-  <string name="afp_type_image">ಚಿತ್ರ</string>
-  <string name="afp_type_music">ಸಂಗೀತ</string>
-  <string name="afp_type_video">ವೀಡಿಯೊ</string>
-  <string name="afp_type_pdf">PDF ಡಾಕ್ಯುಮೆಂಟ್</string>
-  <string name="afp_type_power_point">ಪ್ರಸ್ತುತಿ</string>
-  <string name="afp_type_word">ಡಾಕ್ಯುಮೆಂಟ್</string>
-  <string name="afp_menu_select">ಆಯ್ಕೆ ಮಾಡಿ</string>
   <string name="afp_menu_add_folder">ಫೋಲ್ಡರ್ ಸೇರಿಸು</string>
   <string name="afp_folder_name">ಫೋಲ್ಡರ್ ಹೆಸರು</string>
   <string name="afp_dialog_create">ರಚಿಸಿ</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">ಫೋಲ್ಡರ್ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ</string>
   <string name="afp_error_folder_created">ಫೋಲ್ಡರ್ ಅನ್ನು ರಚಿಸಲಾಗಿಲ್ಲ</string>
   <string name="afp_select_directory">ಡೈರೆಕ್ಟರಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+  <string name="afp_done">ಮುಗಿದಿದೆ</string>
 </resources>

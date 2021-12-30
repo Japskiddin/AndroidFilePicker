@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_action_close">Близо</string>
   <string name="afp_empty_directory_hint">Празна директория</string>
-  <string name="afp_type_archive">Архив</string>
-  <string name="afp_type_certificate">Сертификат</string>
   <string name="afp_type_directory">Указател</string>
   <string name="afp_type_document">Файл</string>
-  <string name="afp_type_drawing">картина</string>
-  <string name="afp_type_excel">Електронна таблица</string>
-  <string name="afp_type_image">Образ</string>
-  <string name="afp_type_music">Музика</string>
-  <string name="afp_type_video">Видео</string>
-  <string name="afp_type_pdf">PDF документ</string>
-  <string name="afp_type_power_point">Презентация</string>
-  <string name="afp_type_word">документ</string>
-  <string name="afp_menu_select">Изберете</string>
   <string name="afp_menu_add_folder">Добави папка</string>
   <string name="afp_folder_name">Име на папка</string>
   <string name="afp_dialog_create">Създайте</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Папката съществува</string>
   <string name="afp_error_folder_created">Папката не е създадена</string>
   <string name="afp_select_directory">Изберете директория</string>
+  <string name="afp_done">Свършен</string>
 </resources>

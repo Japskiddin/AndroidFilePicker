@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_action_close">बंद करे</string>
   <string name="afp_empty_directory_hint">खाली निर्देशिका</string>
-  <string name="afp_type_archive">पुरालेख</string>
-  <string name="afp_type_certificate">प्रमाणपत्र</string>
   <string name="afp_type_directory">निर्देशिका</string>
   <string name="afp_type_document">फ़ाइल</string>
-  <string name="afp_type_drawing">चित्र</string>
-  <string name="afp_type_excel">स्प्रेडशीट</string>
-  <string name="afp_type_image">छवि</string>
-  <string name="afp_type_music">संगीत</string>
-  <string name="afp_type_video">वीडियो</string>
-  <string name="afp_type_pdf">पीडीएफ दस्तावेज़</string>
-  <string name="afp_type_power_point">प्रस्तुतीकरण</string>
-  <string name="afp_type_word">डाक्यूमेंट</string>
-  <string name="afp_menu_select">चुनते हैं</string>
   <string name="afp_menu_add_folder">फ़ोल्डर जोड़ें</string>
   <string name="afp_folder_name">फोल्डर का नाम</string>
   <string name="afp_dialog_create">सृजन करना</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">फ़ोल्डर मौजूद है</string>
   <string name="afp_error_folder_created">फ़ोल्डर नहीं बनाया गया था</string>
   <string name="afp_select_directory">निर्देशिका का चयन करें</string>
+  <string name="afp_done">किया हुआ</string>
 </resources>

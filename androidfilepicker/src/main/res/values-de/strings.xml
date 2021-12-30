@@ -2,19 +2,8 @@
 <resources>
   <string name="afp_empty_directory_hint">Leeres Verzeichnis</string>
   <string name="afp_action_close">Schließen</string>
-  <string name="afp_type_archive">Archiv</string>
-  <string name="afp_type_certificate">Zertifikat</string>
   <string name="afp_type_directory">Verzeichnis</string>
   <string name="afp_type_document">Dokument</string>
-  <string name="afp_type_drawing">Bild</string>
-  <string name="afp_type_excel">Excel Tabelle</string>
-  <string name="afp_type_image">Bild</string>
-  <string name="afp_type_music">Musik</string>
-  <string name="afp_type_video">Video</string>
-  <string name="afp_type_pdf">PDF Dokument</string>
-  <string name="afp_type_power_point">Presentation</string>
-  <string name="afp_type_word">Dokument</string>
-  <string name="afp_menu_select">Wählen</string>
   <string name="afp_menu_add_folder">Ordner hinzufügen</string>
   <string name="afp_folder_name">Ordnernamen</string>
   <string name="afp_dialog_create">Erstellen</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Ordner existiert</string>
   <string name="afp_error_folder_created">Ordner wurde nicht erstellt</string>
   <string name="afp_select_directory">Verzeichnis auswählen</string>
+  <string name="afp_done">Fertig</string>
 </resources>

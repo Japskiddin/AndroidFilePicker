@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="afp_type_certificate">Certificado</string>
   <string name="afp_action_close">Cerrar</string>
-  <string name="afp_type_archive">Archivo</string>
   <string name="afp_empty_directory_hint">Carpeta vacía</string>
   <string name="afp_type_directory">Carpeta</string>
   <string name="afp_type_document">Archivo</string>
-  <string name="afp_type_drawing">Foto</string>
-  <string name="afp_type_excel">Excel</string>
-  <string name="afp_type_image">Imagen</string>
-  <string name="afp_type_music">Música</string>
-  <string name="afp_type_pdf">Documento PDF</string>
-  <string name="afp_type_power_point">Powerpoint</string>
-  <string name="afp_type_video">Vídeo</string>
-  <string name="afp_type_word">Documento Word</string>
-  <string name="afp_menu_select">Seleccionar</string>
   <string name="afp_menu_add_folder">Agregar carpeta</string>
   <string name="afp_folder_name">Nombre de la carpeta</string>
   <string name="afp_dialog_create">Crear</string>
@@ -24,4 +13,5 @@
   <string name="afp_error_folder_exists">Existe carpeta</string>
   <string name="afp_error_folder_created">Carpeta no fue creada</string>
   <string name="afp_select_directory">Seleccionar directorio</string>
+  <string name="afp_done">Hecho</string>
 </resources>

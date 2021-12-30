@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/main_layout"
+    android:background="@color/afp_main_background"
     >
 
   <include layout="@layout/afp_filepicker_toolbar"/>
@@ -14,8 +15,14 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal"
-      android:layout_margin="8dp"
-      android:padding="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="4dp"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
       android:background="@drawable/afp_item_background"
       android:gravity="center_vertical"
       >
@@ -33,7 +40,7 @@
           android:layout_height="36dp"
           android:contentDescription="@null"
           app:srcCompat="@drawable/ic_afp_up"
-          app:tint="@color/afp_white"
+          app:tint="@color/afp_black"
           />
 
     </LinearLayout>
@@ -41,7 +48,7 @@
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:background="@color/afp_white"
+        android:background="@color/afp_black"
         android:layout_marginEnd="4dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
@@ -55,7 +62,8 @@
         android:contentDescription="@null"
         app:srcCompat="@drawable/ic_afp_home_black"
         android:adjustViewBounds="true"
-        app:tint="@color/afp_white"
+        app:tint="@color/afp_black"
+        android:padding="2dp"
         />
 
   </LinearLayout>
@@ -86,6 +94,7 @@
         android:id="@+id/iv_placeholder"
         android:contentDescription="@null"
         app:srcCompat="@drawable/ic_afp_file_placeholder"
+        app:tint="@color/afp_empty_directory_hint"
         />
 
     <TextView
