@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Stänga</string>
+  <string name="afp_empty_directory_hint">Tom katalog</string>
+  <string name="afp_type_archive">Arkiv</string>
+  <string name="afp_type_certificate">Certifikat</string>
+  <string name="afp_type_directory">Katalog</string>
+  <string name="afp_type_document">Fil</string>
+  <string name="afp_type_drawing">Bild</string>
+  <string name="afp_type_excel">Kalkylblad</string>
+  <string name="afp_type_image">Bild</string>
+  <string name="afp_type_music">musik</string>
+  <string name="afp_type_video">Video</string>
+  <string name="afp_type_pdf">PDF-dokument</string>
+  <string name="afp_type_power_point">Presentation</string>
+  <string name="afp_type_word">Dokumentera</string>
+  <string name="afp_menu_select">Välj</string>
+  <string name="afp_menu_add_folder">Lägg till mapp</string>
+  <string name="afp_folder_name">Mapp namn</string>
+  <string name="afp_dialog_create">Skapa</string>
+  <string name="afp_dialog_cancel">Annullera</string>
+  <string name="afp_dialog_title">Ange mappnamnet</string>
+  <string name="afp_error_folder_name">Vänligen ange mappnamn</string>
+  <string name="afp_error_folder_exists">Mapp finns</string>
+  <string name="afp_error_folder_created">Mappen skapades inte</string>
+  <string name="afp_select_directory">Välj katalog</string>
+</resources>

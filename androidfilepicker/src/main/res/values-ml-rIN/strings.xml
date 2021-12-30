@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">അടയ്ക്കുക</string>
+  <string name="afp_empty_directory_hint">ശൂന്യമായ ഡയറക്ടറി</string>
+  <string name="afp_type_archive">ആർക്കൈവ്</string>
+  <string name="afp_type_certificate">സർട്ടിഫിക്കറ്റ്</string>
+  <string name="afp_type_directory">ഡയറക്ടറി</string>
+  <string name="afp_type_document">ഫയൽ</string>
+  <string name="afp_type_drawing">ചിത്രം</string>
+  <string name="afp_type_excel">സ്പ്രെഡ്ഷീറ്റ്</string>
+  <string name="afp_type_image">ചിത്രം</string>
+  <string name="afp_type_music">സംഗീതം</string>
+  <string name="afp_type_video">വീഡിയോ</string>
+  <string name="afp_type_pdf">PDF പ്രമാണം</string>
+  <string name="afp_type_power_point">അവതരണം</string>
+  <string name="afp_type_word">പ്രമാണം</string>
+  <string name="afp_menu_select">തിരഞ്ഞെടുക്കുക</string>
+  <string name="afp_menu_add_folder">ഫോൾഡർ ചേർക്കുക</string>
+  <string name="afp_folder_name">ഫോൾഡറിന്റെ പേര്</string>
+  <string name="afp_dialog_create">സൃഷ്ടിക്കാൻ</string>
+  <string name="afp_dialog_cancel">റദ്ദാക്കുക</string>
+  <string name="afp_dialog_title">ഫോൾഡറിന്റെ പേര് നൽകുക</string>
+  <string name="afp_error_folder_name">ദയവായി ഫോൾഡറിന്റെ പേര് നൽകുക</string>
+  <string name="afp_error_folder_exists">ഫോൾഡർ നിലവിലുണ്ട്</string>
+  <string name="afp_error_folder_created">ഫോൾഡർ സൃഷ്ടിച്ചിട്ടില്ല</string>
+  <string name="afp_select_directory">ഡയറക്ടറി തിരഞ്ഞെടുക്കുക</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">قريب</string>
+  <string name="afp_empty_directory_hint">دليل فارغ</string>
+  <string name="afp_type_archive">أرشيف</string>
+  <string name="afp_type_certificate">شهادة</string>
+  <string name="afp_type_directory">الدليل</string>
+  <string name="afp_type_document">ملف</string>
+  <string name="afp_type_drawing">صورة</string>
+  <string name="afp_type_excel">جدول</string>
+  <string name="afp_type_image">صورة</string>
+  <string name="afp_type_music">موسيقى</string>
+  <string name="afp_type_video">فيديو</string>
+  <string name="afp_type_pdf">وثيقة PDF</string>
+  <string name="afp_type_power_point">عرض</string>
+  <string name="afp_type_word">وثيقة</string>
+  <string name="afp_menu_select">يختار</string>
+  <string name="afp_menu_add_folder">أضف المجلد</string>
+  <string name="afp_folder_name">إسم الملف</string>
+  <string name="afp_dialog_create">يخلق</string>
+  <string name="afp_dialog_cancel">يلغي</string>
+  <string name="afp_dialog_title">أدخل اسم المجلد</string>
+  <string name="afp_error_folder_name">الرجاء إدخال اسم المجلد</string>
+  <string name="afp_error_folder_exists">المجلد موجود</string>
+  <string name="afp_error_folder_created">لم يتم إنشاء المجلد</string>
+  <string name="afp_select_directory">حدد الدليل</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    >
+
+  <include layout="@layout/afp_filepicker_toolbar"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_margin="8dp"
+      android:padding="8dp"
+      android:background="@drawable/afp_item_background"
+      android:gravity="center_vertical"
+      >
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="36dp"
+          android:layout_height="36dp"
+          android:contentDescription="@null"
+          app:srcCompat="@drawable/ic_afp_up"
+          app:tint="@color/afp_white"
+          />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/afp_white"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_home"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_afp_home_black"
+        android:adjustViewBounds="true"
+        app:tint="@color/afp_white"
+        />
+
+  </LinearLayout>
+
+  <io.github.japskiddin.androidfilepicker.widget.EmptyRecyclerView
+      android:id="@+id/directory_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="vertical"
+      android:visibility="visible"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      android:orientation="vertical"
+      />
+
+  <LinearLayout
+      android:id="@+id/directory_empty_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:id="@+id/iv_placeholder"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_afp_file_placeholder"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/afp_empty_directory_hint"
+        android:textColor="@color/afp_empty_directory_hint"
+        android:textSize="24sp"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

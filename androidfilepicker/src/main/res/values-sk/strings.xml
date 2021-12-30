@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_empty_directory_hint">Prázdny priečinok</string>
+  <string name="afp_action_close">Zavrieť</string>
+  <string name="afp_type_archive">Archív</string>
+  <string name="afp_type_certificate">Certifikát</string>
+  <string name="afp_type_directory">Priečinok</string>
+  <string name="afp_type_document">Súbor</string>
+  <string name="afp_type_drawing">Kresba</string>
+  <string name="afp_type_excel">Tabuľka</string>
+  <string name="afp_type_image">Obrázok</string>
+  <string name="afp_type_music">Skladba</string>
+  <string name="afp_type_video">Video</string>
+  <string name="afp_type_pdf">PDF dokument</string>
+  <string name="afp_type_power_point">Prezentácia</string>
+  <string name="afp_type_word">Dokument</string>
+  <string name="afp_menu_select">vybrať</string>
+  <string name="afp_menu_add_folder">Pridať priečinok</string>
+  <string name="afp_folder_name">Názov priečinka</string>
+  <string name="afp_dialog_create">vytvoriť</string>
+  <string name="afp_dialog_cancel">Zrušiť</string>
+  <string name="afp_dialog_title">Zadajte názov priečinka</string>
+  <string name="afp_error_folder_name">Zadajte názov priečinka</string>
+  <string name="afp_error_folder_exists">Priečinok existuje</string>
+  <string name="afp_error_folder_created">Priečinok nebol vytvorený</string>
+  <string name="afp_select_directory">Vyberte adresár</string>
+</resources>

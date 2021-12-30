@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Închide</string>
+  <string name="afp_empty_directory_hint">Director gol</string>
+  <string name="afp_type_archive">Arhiva</string>
+  <string name="afp_type_certificate">Certificat</string>
+  <string name="afp_type_directory">Director</string>
+  <string name="afp_type_document">Fişier</string>
+  <string name="afp_type_drawing">Imagine</string>
+  <string name="afp_type_excel">Foaie de calcul</string>
+  <string name="afp_type_image">Imagine</string>
+  <string name="afp_type_music">Muzică</string>
+  <string name="afp_type_video">Video</string>
+  <string name="afp_type_pdf">document PDF</string>
+  <string name="afp_type_power_point">Prezentare</string>
+  <string name="afp_type_word">Document</string>
+  <string name="afp_menu_select">Selectați</string>
+  <string name="afp_menu_add_folder">Adaugă folder</string>
+  <string name="afp_folder_name">Numele fisierului</string>
+  <string name="afp_dialog_create">Crea</string>
+  <string name="afp_dialog_cancel">Anulare</string>
+  <string name="afp_dialog_title">Introduceți numele folderului</string>
+  <string name="afp_error_folder_name">Vă rugăm să introduceți numele folderului</string>
+  <string name="afp_error_folder_exists">Folder există</string>
+  <string name="afp_error_folder_created">Dosarul nu a fost creat</string>
+  <string name="afp_select_directory">Selectați directorul</string>
+</resources>

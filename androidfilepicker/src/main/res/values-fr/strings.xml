@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Fermer</string>
+  <string name="afp_empty_directory_hint">Répertoire vide</string>
+  <string name="afp_type_archive">Archiver</string>
+  <string name="afp_type_certificate">Certificat</string>
+  <string name="afp_type_directory">Annuaire</string>
+  <string name="afp_type_document">Déposer</string>
+  <string name="afp_type_drawing">Image</string>
+  <string name="afp_type_excel">Tableur</string>
+  <string name="afp_type_image">Image</string>
+  <string name="afp_type_music">Musique</string>
+  <string name="afp_type_video">Vidéo</string>
+  <string name="afp_type_pdf">document PDF</string>
+  <string name="afp_type_power_point">Présentation</string>
+  <string name="afp_type_word">Document</string>
+  <string name="afp_menu_select">Sélectionner</string>
+  <string name="afp_menu_add_folder">Ajouter le dossier</string>
+  <string name="afp_folder_name">Nom de dossier</string>
+  <string name="afp_dialog_create">Créer</string>
+  <string name="afp_dialog_cancel">Annuler</string>
+  <string name="afp_dialog_title">Entrez le nom du dossier</string>
+  <string name="afp_error_folder_name">Veuillez saisir le nom du dossier</string>
+  <string name="afp_error_folder_exists">Le dossier existe</string>
+  <string name="afp_error_folder_created">Le dossier n\'a pas été créé</string>
+  <string name="afp_select_directory">Sélectionnez le répertoire</string>
+</resources>

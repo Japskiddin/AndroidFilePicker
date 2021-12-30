@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Vicino</string>
+  <string name="afp_empty_directory_hint">Directory vuota</string>
+  <string name="afp_type_archive">Archivio</string>
+  <string name="afp_type_certificate">Certificato</string>
+  <string name="afp_type_directory">Directory</string>
+  <string name="afp_type_document">File</string>
+  <string name="afp_type_drawing">Foto</string>
+  <string name="afp_type_excel">Foglio di calcolo</string>
+  <string name="afp_type_image">Immagine</string>
+  <string name="afp_type_music">Musica</string>
+  <string name="afp_type_video">video</string>
+  <string name="afp_type_pdf">documento PDF</string>
+  <string name="afp_type_power_point">Presentazione</string>
+  <string name="afp_type_word">Documento</string>
+  <string name="afp_menu_select">Selezionare</string>
+  <string name="afp_menu_add_folder">Aggiungi cartella</string>
+  <string name="afp_folder_name">Nome della cartella</string>
+  <string name="afp_dialog_create">Creare</string>
+  <string name="afp_dialog_cancel">Annulla</string>
+  <string name="afp_dialog_title">Inserisci il nome della cartella</string>
+  <string name="afp_error_folder_name">Per favore inserisci il nome della cartella</string>
+  <string name="afp_error_folder_exists">La cartella esiste</string>
+  <string name="afp_error_folder_created">La cartella non è stata creata</string>
+  <string name="afp_select_directory">Seleziona directory</string>
+</resources>

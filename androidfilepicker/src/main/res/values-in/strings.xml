@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Menutup</string>
+  <string name="afp_empty_directory_hint">Direktori kosong</string>
+  <string name="afp_type_archive">Arsip</string>
+  <string name="afp_type_certificate">Sertifikat</string>
+  <string name="afp_type_directory">Direktori</string>
+  <string name="afp_type_document">Mengajukan</string>
+  <string name="afp_type_drawing">Gambar</string>
+  <string name="afp_type_excel">Spreadsheet</string>
+  <string name="afp_type_image">Gambar</string>
+  <string name="afp_type_music">Musik</string>
+  <string name="afp_type_video">Video</string>
+  <string name="afp_type_pdf">dokumen PDF</string>
+  <string name="afp_type_power_point">Presentasi</string>
+  <string name="afp_type_word">Dokumen</string>
+  <string name="afp_menu_select">Pilih</string>
+  <string name="afp_menu_add_folder">Tambah Folder</string>
+  <string name="afp_folder_name">Nama folder</string>
+  <string name="afp_dialog_create">Membuat</string>
+  <string name="afp_dialog_cancel">Membatalkan</string>
+  <string name="afp_dialog_title">Masukkan nama folder</string>
+  <string name="afp_error_folder_name">Silakan masukkan nama folder</string>
+  <string name="afp_error_folder_exists">Folder ada</string>
+  <string name="afp_error_folder_created">Folder tidak dibuat</string>
+  <string name="afp_select_directory">Pilih direktori</string>
+</resources>

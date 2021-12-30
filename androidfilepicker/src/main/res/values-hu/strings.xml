@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Bezárás</string>
+  <string name="afp_empty_directory_hint">Üres könyvtár</string>
+  <string name="afp_type_archive">Archívum</string>
+  <string name="afp_type_certificate">Bizonyítvány</string>
+  <string name="afp_type_directory">Könyvtár</string>
+  <string name="afp_type_document">Fájl</string>
+  <string name="afp_type_drawing">Kép</string>
+  <string name="afp_type_excel">Táblázat</string>
+  <string name="afp_type_image">Kép</string>
+  <string name="afp_type_music">Zene</string>
+  <string name="afp_type_video">Videó</string>
+  <string name="afp_type_pdf">PDF dokumentum</string>
+  <string name="afp_type_power_point">Bemutatás</string>
+  <string name="afp_type_word">Dokumentum</string>
+  <string name="afp_menu_select">Válassza ki</string>
+  <string name="afp_menu_add_folder">Mappa hozzáadása</string>
+  <string name="afp_folder_name">Mappa neve</string>
+  <string name="afp_dialog_create">Teremt</string>
+  <string name="afp_dialog_cancel">Megszünteti</string>
+  <string name="afp_dialog_title">Írja be a mappa nevét</string>
+  <string name="afp_error_folder_name">Kérjük, adja meg a mappa nevét</string>
+  <string name="afp_error_folder_exists">A mappa létezik</string>
+  <string name="afp_error_folder_created">A mappa nem jött létre</string>
+  <string name="afp_select_directory">Válassza ki a könyvtárat</string>
+</resources>

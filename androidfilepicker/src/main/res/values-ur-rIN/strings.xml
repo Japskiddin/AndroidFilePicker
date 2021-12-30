@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">بند کریں</string>
+  <string name="afp_empty_directory_hint">خالی ڈائرکٹری</string>
+  <string name="afp_type_archive">محفوظ شدہ دستاویزات</string>
+  <string name="afp_type_certificate">سرٹیفیکیٹ</string>
+  <string name="afp_type_directory">ڈائرکٹری</string>
+  <string name="afp_type_document">فائل</string>
+  <string name="afp_type_drawing">تصویر</string>
+  <string name="afp_type_excel">سپریڈ شیٹ</string>
+  <string name="afp_type_image">تصویر</string>
+  <string name="afp_type_music">موسیقی</string>
+  <string name="afp_type_video">ویڈیو</string>
+  <string name="afp_type_pdf">پی ڈی ایف دستاویز</string>
+  <string name="afp_type_power_point">پریزنٹیشن</string>
+  <string name="afp_type_word">دستاویز</string>
+  <string name="afp_menu_select">منتخب کریں۔</string>
+  <string name="afp_menu_add_folder">فولڈر بناؤ</string>
+  <string name="afp_folder_name">فولڈر کا نام</string>
+  <string name="afp_dialog_create">بنانا</string>
+  <string name="afp_dialog_cancel">منسوخ کریں۔</string>
+  <string name="afp_dialog_title">فولڈر کا نام درج کریں۔</string>
+  <string name="afp_error_folder_name">براہ کرم فولڈر کا نام درج کریں۔</string>
+  <string name="afp_error_folder_exists">فولڈر موجود ہے۔</string>
+  <string name="afp_error_folder_created">فولڈر نہیں بنایا گیا تھا۔</string>
+  <string name="afp_select_directory">ڈائریکٹری منتخب کریں۔</string>
+</resources>

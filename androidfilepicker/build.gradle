@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply from: file('publish.gradle')
+
+android {
+  packagingOptions {
+    exclude "/META-INF/*.kotlin_module"
+    exclude "**/kotlin/**"
+    exclude "**/*.txt"
+    exclude "**/*.xml"
+    exclude "**/*.properties"
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/license.txt'
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/NOTICE.txt'
+    exclude 'META-INF/notice.txt'
+    exclude 'META-INF/ASL2.0'
+    exclude 'META-INF/*.version'
+    exclude 'META-INF/androidx.*'
+    exclude 'META-INF/proguard/androidx-*'
+  }
+
+  lintOptions {
+    abortOnError false
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  compileSdkVersion 31
+  defaultConfig {
+    minSdkVersion 14
+    targetSdkVersion 31
+    versionCode 37
+    versionName "1.3.1"
+    vectorDrawables.useSupportLibrary = true
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+configurations {
+  compile.exclude group: 'androidx.viewpager', module: 'viewpager'
+  compile.exclude group: 'androidx.slidingpanelayout', module: 'slidingpanelayout'
+  compile.exclude group: 'androidx.swiperefreshlayout', module: 'swiperefreshlayout'
+  compile.exclude group: 'androidx.localbroadcastmanager', module: 'localbroadcastmanager'
+  compile.exclude group: 'androidx.print', module: 'print'
+  compile.exclude group: 'androidx.documentfile', module: 'documentfile'
+  compile.exclude group: 'androidx.cursoradapter', module: 'cursoradapter'
+  compile.exclude group: 'androidx.interpolator', module: 'interpolator'
+  compile.exclude group: 'androidx.customview', module: 'customview'
+  compile.exclude group: 'androidx.versionedparcelable', module: 'versionedparcelable'
+  compile.exclude group: 'androidx.asynclayoutinflater', module: 'asynclayoutinflater'
+  compile.exclude group: 'androidx.loader', module: 'loader'
+  compile.exclude group: 'androidx.transition', module: 'transition'
+}
+
+dependencies {
+  implementation 'androidx.appcompat:appcompat:1.4.0'
+  implementation 'androidx.recyclerview:recyclerview:1.2.1'
+}

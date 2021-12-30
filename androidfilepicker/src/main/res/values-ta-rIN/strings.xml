@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">நெருக்கமான</string>
+  <string name="afp_empty_directory_hint">வெற்று அடைவு</string>
+  <string name="afp_type_archive">காப்பகம்</string>
+  <string name="afp_type_certificate">சான்றிதழ்</string>
+  <string name="afp_type_directory">அடைவு</string>
+  <string name="afp_type_document">கோப்பு</string>
+  <string name="afp_type_drawing">படம்</string>
+  <string name="afp_type_excel">விரிதாள்</string>
+  <string name="afp_type_image">படம்</string>
+  <string name="afp_type_music">இசை</string>
+  <string name="afp_type_video">காணொளி</string>
+  <string name="afp_type_pdf">PDF ஆவணம்</string>
+  <string name="afp_type_power_point">விளக்கக்காட்சி</string>
+  <string name="afp_type_word">ஆவணம்</string>
+  <string name="afp_menu_select">தேர்ந்தெடு</string>
+  <string name="afp_menu_add_folder">கோப்புறையைச் சேர்க்கவும்</string>
+  <string name="afp_folder_name">கோப்புறை பெயர்</string>
+  <string name="afp_dialog_create">உருவாக்கு</string>
+  <string name="afp_dialog_cancel">ரத்து செய்</string>
+  <string name="afp_dialog_title">கோப்புறையின் பெயரை உள்ளிடவும்</string>
+  <string name="afp_error_folder_name">கோப்புறை பெயரை உள்ளிடவும்</string>
+  <string name="afp_error_folder_exists">கோப்புறை உள்ளது</string>
+  <string name="afp_error_folder_created">கோப்புறை உருவாக்கப்படவில்லை</string>
+  <string name="afp_select_directory">கோப்பகத்தைத் தேர்ந்தெடுக்கவும்</string>
+</resources>

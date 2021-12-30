@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Близу</string>
+  <string name="afp_empty_directory_hint">Празан именик</string>
+  <string name="afp_type_archive">Архива</string>
+  <string name="afp_type_certificate">Потврда</string>
+  <string name="afp_type_directory">Именик</string>
+  <string name="afp_type_document">Филе</string>
+  <string name="afp_type_drawing">Слика</string>
+  <string name="afp_type_excel">Табела</string>
+  <string name="afp_type_image">Слика</string>
+  <string name="afp_type_music">Музика</string>
+  <string name="afp_type_video">Видео</string>
+  <string name="afp_type_pdf">ПДФ документ</string>
+  <string name="afp_type_power_point">Презентација</string>
+  <string name="afp_type_word">Документ</string>
+  <string name="afp_menu_select">Изаберите</string>
+  <string name="afp_menu_add_folder">Додај фолдер</string>
+  <string name="afp_folder_name">Име фасцикле</string>
+  <string name="afp_dialog_create">Креирај</string>
+  <string name="afp_dialog_cancel">Поништити, отказати</string>
+  <string name="afp_dialog_title">Унесите назив фасцикле</string>
+  <string name="afp_error_folder_name">Унесите назив фасцикле</string>
+  <string name="afp_error_folder_exists">Фолдер постоји</string>
+  <string name="afp_error_folder_created">Фолдер није креиран</string>
+  <string name="afp_select_directory">Изаберите директоријум</string>
+</resources>

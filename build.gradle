@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+subprojects {
+  tasks.withType(Javadoc).all { enabled = false }
+}
+
+buildscript {
+  repositories {
+    mavenCentral()
+    google()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:7.0.4'
+  }
+}
+
+allprojects {
+  repositories {
+    mavenCentral()
+    google()
+    //    maven {
+    //      Properties properties = new Properties()
+    //      properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    //
+    //      name = "AndroidFilePicker"
+    //      url = uri("https://maven.pkg.github.com/japskiddin/AndroidFilePicker")
+    //      credentials {
+    //        username = properties.getProperty("GITHUB_USER")
+    //        password = properties.getProperty("GITHUB_PERSONAL_ACCESS_TOKEN")
+    //      }
+    //    }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

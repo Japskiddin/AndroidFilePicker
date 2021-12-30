@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">বন্ধ</string>
+  <string name="afp_empty_directory_hint">খালি ডিরেক্টরি</string>
+  <string name="afp_type_archive">সংরক্ষণাগার</string>
+  <string name="afp_type_certificate">সনদপত্র</string>
+  <string name="afp_type_directory">ডিরেক্টরি</string>
+  <string name="afp_type_document">ফাইল</string>
+  <string name="afp_type_drawing">ছবি</string>
+  <string name="afp_type_excel">স্প্রেডশীট</string>
+  <string name="afp_type_image">ছবি</string>
+  <string name="afp_type_music">সঙ্গীত</string>
+  <string name="afp_type_video">ভিডিও</string>
+  <string name="afp_type_pdf">পিডিএফ ডকুমেন্ট</string>
+  <string name="afp_type_power_point">উপস্থাপনা</string>
+  <string name="afp_type_word">দলিল</string>
+  <string name="afp_menu_select">নির্বাচন করুন</string>
+  <string name="afp_menu_add_folder">ফোল্ডার যোগ করুন</string>
+  <string name="afp_folder_name">ফোল্ডারের নাম</string>
+  <string name="afp_dialog_create">সৃষ্টি</string>
+  <string name="afp_dialog_cancel">বাতিল করুন</string>
+  <string name="afp_dialog_title">ফোল্ডারের নাম লিখুন</string>
+  <string name="afp_error_folder_name">অনুগ্রহ করে ফোল্ডারের নাম লিখুন</string>
+  <string name="afp_error_folder_exists">ফোল্ডার বিদ্যমান</string>
+  <string name="afp_error_folder_created">ফোল্ডার তৈরি করা হয়নি</string>
+  <string name="afp_select_directory">ডিরেক্টরি নির্বাচন করুন</string>
+</resources>

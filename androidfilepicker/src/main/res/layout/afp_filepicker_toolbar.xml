@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    >
+
+  <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:padding="12dp"
+      android:id="@+id/iv_filepicker_toolbar_back"
+      android:contentDescription="@null"
+      android:layout_centerVertical="true"
+      app:srcCompat="@drawable/ic_afp_arrow_back_filepicker"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:textSize="16sp"
+      android:text="@string/afp_app_name"
+      android:textStyle="bold"
+      android:gravity="center_vertical"
+      android:textColor="@color/afp_white"
+      android:id="@+id/tv_filepicker_toolbar_title"
+      android:layout_toRightOf="@id/iv_filepicker_toolbar_back"
+      android:layout_toEndOf="@id/iv_filepicker_toolbar_back"
+      android:layout_toLeftOf="@id/filepicker_toolbar_buttons"
+      android:layout_toStartOf="@id/filepicker_toolbar_buttons"
+      />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:id="@+id/filepicker_toolbar_buttons"
+      android:layout_marginRight="16dp"
+      android:layout_marginEnd="16dp"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:id="@+id/iv_toolbar_add"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_afp_add_box_black"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:id="@+id/iv_toolbar_check"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_afp_check_circle_black"
+        />
+
+  </LinearLayout>
+
+</RelativeLayout>

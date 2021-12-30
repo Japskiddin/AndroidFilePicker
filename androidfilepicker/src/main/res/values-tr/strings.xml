@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Kapat</string>
+  <string name="afp_empty_directory_hint">Boş dizin</string>
+  <string name="afp_type_archive">Arşiv</string>
+  <string name="afp_type_certificate">sertifika</string>
+  <string name="afp_type_directory">dizin</string>
+  <string name="afp_type_document">Dosya</string>
+  <string name="afp_type_drawing">Resim</string>
+  <string name="afp_type_excel">E-tablo</string>
+  <string name="afp_type_image">resim</string>
+  <string name="afp_type_music">Müzik</string>
+  <string name="afp_type_video">Video</string>
+  <string name="afp_type_pdf">PDF belgesi</string>
+  <string name="afp_type_power_point">Sunum</string>
+  <string name="afp_type_word">belge</string>
+  <string name="afp_menu_select">Seçme</string>
+  <string name="afp_menu_add_folder">Klasörü eklemek</string>
+  <string name="afp_folder_name">Klasör ismi</string>
+  <string name="afp_dialog_create">Yaratmak</string>
+  <string name="afp_dialog_cancel">İptal etmek</string>
+  <string name="afp_dialog_title">Klasör adını girin</string>
+  <string name="afp_error_folder_name">Lütfen klasör adını girin</string>
+  <string name="afp_error_folder_exists">klasör var</string>
+  <string name="afp_error_folder_created">Klasör oluşturulmadı</string>
+  <string name="afp_select_directory">Dizin seçin</string>
+</resources>

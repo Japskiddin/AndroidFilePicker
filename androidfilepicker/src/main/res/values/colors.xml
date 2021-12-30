@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="afp_colorPrimary">#272727</color>
+  <color name="afp_colorPrimaryDark">#0E0E0E</color>
+  <color name="afp_colorAccent">#921616</color>
+  <color name="afp_empty_directory_hint">#c7c7c7</color>
+  <color name="afp_compatibility_pressed_color">#1a000000</color>
+  <color name="afp_compatibility_focus_color">#48000000</color>
+  <color name="afp_transparent">#00000000</color>
+  <color name="afp_white">#ffffffff</color>
+  <color name="afp_background">#E2E2E2</color>
+  <color name="afp_item_background">#B6B6B6</color>
+</resources>

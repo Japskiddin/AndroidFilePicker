@@ -1,0 +1,9 @@
+<resources>
+
+  <style name="AFP_BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/afp_colorPrimary</item>
+    <item name="colorPrimaryDark">@color/afp_colorPrimaryDark</item>
+    <item name="colorAccent">@color/afp_colorAccent</item>
+  </style>
+
+</resources>

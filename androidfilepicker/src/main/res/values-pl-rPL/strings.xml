@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">Blisko</string>
+  <string name="afp_empty_directory_hint">Pusty katalog</string>
+  <string name="afp_type_archive">Archiwum</string>
+  <string name="afp_type_certificate">Certyfikat</string>
+  <string name="afp_type_directory">Informator</string>
+  <string name="afp_type_document">Plik</string>
+  <string name="afp_type_drawing">Obrazek</string>
+  <string name="afp_type_excel">Arkusz</string>
+  <string name="afp_type_image">Obraz</string>
+  <string name="afp_type_music">Muzyka</string>
+  <string name="afp_type_video">Wideo</string>
+  <string name="afp_type_pdf">Dokument PDF</string>
+  <string name="afp_type_power_point">Prezentacja</string>
+  <string name="afp_type_word">Dokument</string>
+  <string name="afp_menu_select">Wybierać</string>
+  <string name="afp_menu_add_folder">Dodaj folder</string>
+  <string name="afp_folder_name">Nazwa folderu</string>
+  <string name="afp_dialog_create">Tworzyć</string>
+  <string name="afp_dialog_cancel">Anuluj</string>
+  <string name="afp_dialog_title">Wpisz nazwę folderu</string>
+  <string name="afp_error_folder_name">Proszę podać nazwę folderu</string>
+  <string name="afp_error_folder_exists">Folder istnieje</string>
+  <string name="afp_error_folder_created">Folder nie został utworzony</string>
+  <string name="afp_select_directory">Wybierz katalog</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="afp_action_close">ਬੰਦ ਕਰੋ</string>
+  <string name="afp_empty_directory_hint">ਖਾਲੀ ਡਾਇਰੈਕਟਰੀ</string>
+  <string name="afp_type_archive">ਪੁਰਾਲੇਖ</string>
+  <string name="afp_type_certificate">ਸਰਟੀਫਿਕੇਟ</string>
+  <string name="afp_type_directory">ਡਾਇਰੈਕਟਰੀ</string>
+  <string name="afp_type_document">ਫਾਈਲ</string>
+  <string name="afp_type_drawing">ਤਸਵੀਰ</string>
+  <string name="afp_type_excel">ਸਪ੍ਰੈਡਸ਼ੀਟ</string>
+  <string name="afp_type_image">ਚਿੱਤਰ</string>
+  <string name="afp_type_music">ਸੰਗੀਤ</string>
+  <string name="afp_type_video">ਵੀਡੀਓ</string>
+  <string name="afp_type_pdf">PDF ਦਸਤਾਵੇਜ਼</string>
+  <string name="afp_type_power_point">ਪੇਸ਼ਕਾਰੀ</string>
+  <string name="afp_type_word">ਦਸਤਾਵੇਜ਼</string>
+  <string name="afp_menu_select">ਚੁਣੋ</string>
+  <string name="afp_menu_add_folder">ਫੋਲਡਰ ਸ਼ਾਮਲ ਕਰੋ</string>
+  <string name="afp_folder_name">ਫੋਲਡਰ ਦਾ ਨਾਮ</string>
+  <string name="afp_dialog_create">ਬਣਾਓ</string>
+  <string name="afp_dialog_cancel">ਰੱਦ ਕਰੋ</string>
+  <string name="afp_dialog_title">ਫੋਲਡਰ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ</string>
+  <string name="afp_error_folder_name">ਕਿਰਪਾ ਕਰਕੇ ਫੋਲਡਰ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ</string>
+  <string name="afp_error_folder_exists">ਫੋਲਡਰ ਮੌਜੂਦ ਹੈ</string>
+  <string name="afp_error_folder_created">ਫੋਲਡਰ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ ਸੀ</string>
+  <string name="afp_select_directory">ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ</string>
+</resources>
