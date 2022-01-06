@@ -354,19 +354,21 @@ import java.util.regex.Pattern;
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
       File[] folders = getExternalCacheDirs();
-      for (File folder : folders) {
-        String path = folder.getAbsolutePath();
-        File storageFile = new File(path.substring(0, path.indexOf("/Android")));
-        boolean found = false;
-        for (FileItem fileItem : storages) {
-          if (fileItem.getFilePath().equals(storageFile.getAbsolutePath())) {
-            found = true;
-            break;
+      if (folders != null) {
+        for (File folder : folders) {
+          String path = folder.getAbsolutePath();
+          File storageFile = new File(path.substring(0, path.indexOf("/Android")));
+          boolean found = false;
+          for (FileItem fileItem : storages) {
+            if (fileItem.getFilePath().equals(storageFile.getAbsolutePath())) {
+              found = true;
+              break;
+            }
           }
-        }
 
-        if (!found) {
-          storages.add(new FileItem(storageFile.getName(), storageFile.getAbsolutePath()));
+          if (!found) {
+            storages.add(new FileItem(storageFile.getName(), storageFile.getAbsolutePath()));
+          }
         }
       }
     }
