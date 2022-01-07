@@ -356,6 +356,7 @@ import java.util.regex.Pattern;
       File[] folders = getExternalCacheDirs();
       if (folders != null) {
         for (File folder : folders) {
+          if (folder == null) continue;
           String path = folder.getAbsolutePath();
           File storageFile = new File(path.substring(0, path.indexOf("/Android")));
           boolean found = false;
