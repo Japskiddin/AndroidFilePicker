@@ -358,7 +358,9 @@ import java.util.regex.Pattern;
         for (File folder : folders) {
           if (folder == null) continue;
           String path = folder.getAbsolutePath();
-          File storageFile = new File(path.substring(0, path.indexOf("/Android")));
+          int folderIndex = path.indexOf("/Android");
+          if (folderIndex == -1) continue;
+          File storageFile = new File(path.substring(0, folderIndex));
           boolean found = false;
           for (FileItem fileItem : storages) {
             if (fileItem.getFilePath().equals(storageFile.getAbsolutePath())) {

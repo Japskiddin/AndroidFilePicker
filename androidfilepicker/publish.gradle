@@ -2,7 +2,7 @@ apply plugin: 'maven-publish'
 
 def LIB_GROUP_ID = 'io.github.japskiddin'
 def LIB_ARTIFACT_ID = 'androidfilepicker'
-def LIB_VERSION = '1.3.5'
+def LIB_VERSION = '1.3.6'
 
 task sourceJar(type: Jar) {
   from android.sourceSets.main.java.srcDirs

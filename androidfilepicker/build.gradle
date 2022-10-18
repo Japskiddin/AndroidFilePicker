@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply from: file('publish.gradle')
 
 android {
+  namespace 'io.github.japskiddin.androidfilepicker'
   packagingOptions {
     jniLibs {
       excludes += ['**/kotlin/**', 'META-INF/androidx.*', 'META-INF/proguard/androidx-*']
@@ -12,10 +13,10 @@ android {
     }
   }
 
-  compileSdkVersion 33
+  compileSdk 33
   defaultConfig {
-    minSdkVersion 14
-    targetSdkVersion 33
+    minSdk 14
+    targetSdk 33
     vectorDrawables.useSupportLibrary = true
   }
   buildTypes {
@@ -27,7 +28,6 @@ android {
   lint {
     abortOnError false
   }
-  namespace 'io.github.japskiddin.androidfilepicker'
 }
 
 configurations {
@@ -48,6 +48,6 @@ configurations {
 
 dependencies {
   implementation 'com.google.android.material:material:1.6.1'
-  implementation 'androidx.appcompat:appcompat:1.5.0'
+  implementation 'androidx.appcompat:appcompat:1.5.1'
   implementation 'androidx.recyclerview:recyclerview:1.2.1'
 }
