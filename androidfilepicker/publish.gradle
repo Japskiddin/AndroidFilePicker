@@ -4,10 +4,10 @@ def LIB_GROUP_ID = 'io.github.japskiddin'
 def LIB_ARTIFACT_ID = 'androidfilepicker'
 def LIB_VERSION = '1.3.6'
 
-task sourceJar(type: Jar) {
-  from android.sourceSets.main.java.srcDirs
-  classifier "sources"
-}
+//task sourceJar(type: Jar) {
+//  from android.sourceSets.main.java.srcDirs
+//  classifier "sources"
+//}
 
 publishing {
   repositories {
@@ -33,7 +33,7 @@ publishing {
       artifactId LIB_ARTIFACT_ID
       version LIB_VERSION
       artifact("$buildDir/outputs/aar/androidfilepicker-release.aar")
-      artifact(sourceJar)
+      //      artifact(sourceJar)
 
       pom.withXml {
         def dependenciesNode = asNode().appendNode('dependencies')
