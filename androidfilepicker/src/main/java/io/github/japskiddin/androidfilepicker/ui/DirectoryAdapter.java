@@ -22,7 +22,7 @@ public class DirectoryAdapter extends RecyclerView.Adapter<DirectoryAdapter.Dire
     void onItemClick(View view, int position);
   }
 
-  @SuppressWarnings("Convert2Lambda") public static class DirectoryViewHolder
+  public static class DirectoryViewHolder
       extends RecyclerView.ViewHolder {
     private final ImageView mFileImage;
     private final TextView mFileTitle, mFileSubtitle;
@@ -30,11 +30,7 @@ public class DirectoryAdapter extends RecyclerView.Adapter<DirectoryAdapter.Dire
     public DirectoryViewHolder(View itemView, final OnItemClickListener clickListener) {
       super(itemView);
 
-      itemView.setOnClickListener(new View.OnClickListener() {
-        @Override public void onClick(View v) {
-          clickListener.onItemClick(v, getAbsoluteAdapterPosition());
-        }
-      });
+      itemView.setOnClickListener(v -> clickListener.onItemClick(v, getAbsoluteAdapterPosition()));
 
       mFileImage = itemView.findViewById(R.id.item_file_image);
       mFileTitle = itemView.findViewById(R.id.item_file_title);
@@ -59,7 +55,8 @@ public class DirectoryAdapter extends RecyclerView.Adapter<DirectoryAdapter.Dire
 
   @NonNull
   @Override public DirectoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.afp_item_file, parent, false);
+    View view =
+        LayoutInflater.from(parent.getContext()).inflate(R.layout.afp_item_file, parent, false);
 
     return new DirectoryViewHolder(view, mOnItemClickListener);
   }

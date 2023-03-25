@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -12,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import io.github.japskiddin.androidfilepicker.AndroidFilePicker;
 import io.github.japskiddin.androidfilepicker.ui.FilePickerActivity;
 
-@SuppressWarnings("Convert2Lambda") public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
   public static final int PERMISSIONS_REQUEST_CODE = 0;
   public static final int FILE_PICKER_REQUEST_CODE = 1;
 
@@ -21,11 +20,7 @@ import io.github.japskiddin.androidfilepicker.ui.FilePickerActivity;
     setContentView(R.layout.activity_main);
 
     Button pickButton = findViewById(R.id.pick_from_activity);
-    pickButton.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        checkPermissionsAndOpenFilePicker();
-      }
-    });
+    pickButton.setOnClickListener(v -> checkPermissionsAndOpenFilePicker());
   }
 
   private void checkPermissionsAndOpenFilePicker() {

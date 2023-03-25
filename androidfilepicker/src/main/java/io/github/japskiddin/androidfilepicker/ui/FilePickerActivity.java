@@ -1,6 +1,5 @@
 package io.github.japskiddin.androidfilepicker.ui;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -32,11 +31,10 @@ import java.io.FileFilter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Pattern;
 
-@SuppressWarnings("Convert2Lambda") public class FilePickerActivity extends AppCompatActivity {
+public class FilePickerActivity extends AppCompatActivity {
   public static final String ARG_START_PATH = "arg_start_path";
   public static final String ARG_CURRENT_PATH = "arg_current_path";
 
@@ -59,7 +57,10 @@ import java.util.regex.Pattern;
   private String mCurrentPath = mStartPath;
   private CharSequence mTitle;
   private TextView tvToolbarTitle;
-  private boolean mCloseable, isFilePick, addDirs, isHome = true;
+  private boolean mCloseable;
+  private boolean isFilePick;
+  private boolean addDirs;
+  private boolean isHome = true;
   private CompositeFilter mFilter;
   private List<FileItem> storages = new ArrayList<>();
 
@@ -89,8 +90,15 @@ import java.util.regex.Pattern;
   }
 
   private void initArguments(Bundle savedInstanceState) {
-    if (getIntent().hasExtra(ARG_FILTER)) {
-      Serializable filter = getIntent().getSerializableExtra(ARG_FILTER);
+    Intent intent = getIntent();
+    if (intent.hasExtra(ARG_FILTER)) {
+      Serializable filter;
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        filter = intent.getSerializableExtra(ARG_FILTER, Serializable.class);
+      } else {
+        //noinspection deprecation
+        filter = intent.getSerializableExtra(ARG_FILTER);
+      }
 
       if (filter instanceof Pattern) {
         ArrayList<FileFilter> filters = new ArrayList<>();
@@ -105,13 +113,13 @@ import java.util.regex.Pattern;
       mStartPath = savedInstanceState.getString(STATE_START_PATH);
       mCurrentPath = savedInstanceState.getString(STATE_CURRENT_PATH);
     } else {
-      if (getIntent().hasExtra(ARG_START_PATH)) {
-        mStartPath = getIntent().getStringExtra(ARG_START_PATH);
+      if (intent.hasExtra(ARG_START_PATH)) {
+        mStartPath = intent.getStringExtra(ARG_START_PATH);
         mCurrentPath = mStartPath;
       }
 
-      if (getIntent().hasExtra(ARG_CURRENT_PATH)) {
-        String currentPath = getIntent().getStringExtra(ARG_CURRENT_PATH);
+      if (intent.hasExtra(ARG_CURRENT_PATH)) {
+        String currentPath = intent.getStringExtra(ARG_CURRENT_PATH);
 
         if (currentPath != null && currentPath.startsWith(mStartPath)) {
           mCurrentPath = currentPath;
@@ -119,20 +127,20 @@ import java.util.regex.Pattern;
       }
     }
 
-    if (getIntent().hasExtra(ARG_TITLE)) {
-      mTitle = getIntent().getCharSequenceExtra(ARG_TITLE);
+    if (intent.hasExtra(ARG_TITLE)) {
+      mTitle = intent.getCharSequenceExtra(ARG_TITLE);
     }
 
-    if (getIntent().hasExtra(ARG_CLOSEABLE)) {
-      mCloseable = getIntent().getBooleanExtra(ARG_CLOSEABLE, true);
+    if (intent.hasExtra(ARG_CLOSEABLE)) {
+      mCloseable = intent.getBooleanExtra(ARG_CLOSEABLE, true);
     }
 
-    if (getIntent().hasExtra(ARG_FILE_PICK)) {
-      isFilePick = getIntent().getBooleanExtra(ARG_FILE_PICK, false);
+    if (intent.hasExtra(ARG_FILE_PICK)) {
+      isFilePick = intent.getBooleanExtra(ARG_FILE_PICK, false);
     }
 
-    if (getIntent().hasExtra(ARG_ADD_DIRS)) {
-      addDirs = getIntent().getBooleanExtra(ARG_ADD_DIRS, true);
+    if (intent.hasExtra(ARG_ADD_DIRS)) {
+      addDirs = intent.getBooleanExtra(ARG_ADD_DIRS, true);
     }
 
     prepareStoragesList();
@@ -156,21 +164,11 @@ import java.util.regex.Pattern;
     if (isFilePick) {
       ivToolbarCheck.setVisibility(View.GONE);
     }
-    ivToolbarAdd.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        showNewFolderDialog();
-      }
-    });
-    ivToolbarCheck.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        setResultAndFinish(mCurrentPath);
-      }
-    });
-    ivToolbarBack.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View view) {
-        setResult(RESULT_CANCELED);
-        finish();
-      }
+    ivToolbarAdd.setOnClickListener(v -> showNewFolderDialog());
+    ivToolbarCheck.setOnClickListener(v -> setResultAndFinish(mCurrentPath));
+    ivToolbarBack.setOnClickListener(view -> {
+      setResult(RESULT_CANCELED);
+      finish();
     });
     updateTitle();
   }
@@ -182,17 +180,11 @@ import java.util.regex.Pattern;
     ImageView ivHome = findViewById(R.id.iv_home);
     LinearLayout btnUp = findViewById(R.id.btn_back);
 
-    btnUp.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View view) {
-        backClick(false);
-      }
-    });
-    ivHome.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View view) {
-        isHome = true;
-        updateTitle();
-        initFilesList();
-      }
+    btnUp.setOnClickListener(view -> backClick(false));
+    ivHome.setOnClickListener(view -> {
+      isHome = true;
+      updateTitle();
+      initFilesList();
     });
   }
 
@@ -210,22 +202,16 @@ import java.util.regex.Pattern;
         new DirectoryAdapter(this,
             isHome ? storages : FileUtils.getFileListByDirPath(mCurrentPath, mFilter), isHome);
 
-    mDirectoryAdapter.setOnItemClickListener(new DirectoryAdapter.OnItemClickListener() {
-      @Override public void onItemClick(View view, int position) {
-        onFileClicked(mDirectoryAdapter.getModel(position));
-      }
-    });
+    mDirectoryAdapter.setOnItemClickListener(
+        (view, position) -> onFileClicked(mDirectoryAdapter.getModel(position)));
 
     mDirectoryRecyclerView.setAdapter(mDirectoryAdapter);
     mDirectoryRecyclerView.setEmptyView(mEmptyView);
   }
 
   private void onFileClicked(final File clickedFile) {
-    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-      @Override public void run() {
-        handleFileClicked(clickedFile);
-      }
-    }, HANDLE_CLICK_DELAY);
+    new Handler(Looper.getMainLooper()).postDelayed(() -> handleFileClicked(clickedFile),
+        HANDLE_CLICK_DELAY);
   }
 
   private void backClick(boolean isBackPressed) {
@@ -256,17 +242,9 @@ import java.util.regex.Pattern;
     alertDialog.setView(linearLayout);
     alertDialog.setTitle(R.string.afp_dialog_title);
     alertDialog.setNegativeButton(R.string.afp_dialog_cancel,
-        new DialogInterface.OnClickListener() {
-          @Override public void onClick(DialogInterface dialogInterface, int i) {
-            dialogInterface.dismiss();
-          }
-        });
+        (dialogInterface, i) -> dialogInterface.dismiss());
     alertDialog.setPositiveButton(R.string.afp_dialog_create,
-        new DialogInterface.OnClickListener() {
-          @Override public void onClick(DialogInterface dialogInterface, int i) {
-            createNewFolder(dirName.getText().toString());
-          }
-        });
+        (dialogInterface, i) -> createNewFolder(dirName.getText().toString()));
     alertDialog.create().show();
   }
 
@@ -377,14 +355,12 @@ import java.util.regex.Pattern;
     }
 
     if (storages.size() > 1) {
-      Collections.sort(storages, new Comparator<FileItem>() {
-        @Override public int compare(FileItem fileItem1, FileItem fileItem2) {
-          if (fileItem1.getFileName().equals(getString(R.string.afp_internal_storage))
-              || fileItem2.getFileName().equals(getString(R.string.afp_internal_storage))) {
-            return 1;
-          } else {
-            return fileItem1.getFileName().compareTo(fileItem2.getFileName());
-          }
+      Collections.sort(storages, (fileItem1, fileItem2) -> {
+        if (fileItem1.getFileName().equals(getString(R.string.afp_internal_storage))
+            || fileItem2.getFileName().equals(getString(R.string.afp_internal_storage))) {
+          return 1;
+        } else {
+          return fileItem1.getFileName().compareTo(fileItem2.getFileName());
         }
       });
     }
