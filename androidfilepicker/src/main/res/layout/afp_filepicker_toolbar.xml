@@ -15,10 +15,10 @@
       android:contentDescription="@string/afp_action_close"
       android:layout_centerVertical="true"
       app:srcCompat="@drawable/ic_afp_arrow_back_filepicker"
-      app:tint="@color/afp_toolbar_white"
+      app:tint="?afpToolbarColor"
       />
 
-  <TextView
+  <androidx.appcompat.widget.AppCompatTextView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_marginLeft="16dp"
@@ -27,7 +27,7 @@
       android:text="@string/afp_app_name"
       android:textStyle="bold"
       android:gravity="center_vertical"
-      android:textColor="@color/afp_toolbar_white"
+      android:textColor="?afpToolbarColor"
       android:id="@+id/tv_filepicker_toolbar_title"
       android:layout_toRightOf="@id/iv_filepicker_toolbar_back"
       android:layout_toEndOf="@id/iv_filepicker_toolbar_back"
@@ -53,7 +53,7 @@
         android:id="@+id/iv_toolbar_add"
         android:contentDescription="@string/afp_menu_add_folder"
         app:srcCompat="@drawable/ic_afp_add_box_black"
-        app:tint="@color/afp_toolbar_white"
+        app:tint="?afpToolbarColor"
         />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -63,7 +63,7 @@
         android:id="@+id/iv_toolbar_check"
         android:contentDescription="@string/afp_done"
         app:srcCompat="@drawable/ic_afp_check_circle_black"
-        app:tint="@color/afp_toolbar_white"
+        app:tint="?afpToolbarColor"
         />
 
   </LinearLayout>
